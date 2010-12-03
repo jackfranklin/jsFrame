@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+   <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+   <title>JSFrame CSS &amp; jQuery Framework by Jack Franklin</title>
+<!-- The 1140px Grid -->
+	<link rel="stylesheet" href="grid/1140.css" type="text/css" media="screen" />
+	
+	<!--[if lte IE 9]>
+	<link rel="stylesheet" href="grid/ie.css" type="text/css" media="screen" />
+	<![endif]-->
+	
+	<!-- Type and image presets - NOT ESSENTIAL -->
+	<link rel="stylesheet" href="grid/typeimg.css" type="text/css" media="screen" />
+	<!-- Make minor type adjustments for 1024 monitors -->
+	<link rel="stylesheet" href="grid/smallerscreen.css" media="only screen and (max-width: 1023px)" />
+	<!-- Resets grid for mobile -->
+	<link rel="stylesheet" href="grid/mobile.css" media="handheld, only screen and (max-width: 767px)" />
+   
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+   <script src="jsframe.js" type="text/javascript" charset="utf-8"></script>
+   <script type="text/javascript" charset="utf-8">
+      $(function() {
+          $('body').jsFrame();
+      });
+   </script>
+</head>
+<body>
+   <div class="container">
+     <div class="row" rel="2.5.5">
+       <div>2 collumns maybe?</div><!--this should be 2 cols worth-->
+       <div>5 cols i hope</div><!--this will be 5 cols worth-->
+       <div>5 cols i hope</div><!--this will be 5 cols worth-->
+     </div>
+   </div>
+
+</body>
+</html>
