@@ -20,7 +20,7 @@ p. jsFrame is very simple. Firstly, make sure the CSS files are all linked to co
 
 notextile. <pre><code>
    &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8">&lt;/script>
-   <script src="jsframe.js" type="text/javascript" charset="utf-8"></script>
+   &lt;script src="jsframe.js" type="text/javascript" charset="utf-8">&lt;/script>
 
 notextile. </code></pre>
 
