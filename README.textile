@@ -19,7 +19,6 @@ h3. Usage.
 p. jsFrame is very simple. Firstly, make sure the CSS files are all linked to correctly. Then include jQuery and jsFrame.js like so:
 
 notextile. <pre><code>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="jsframe.js" type="text/javascript" charset="utf-8"></script>
 
@@ -68,3 +67,6 @@ h3. Help Me!
 p. If you're stuck, get in touch:
 *@Jack_Franklin on Twitter
 *www.jackfranklin.co.uk
+
+h3. One final Note
+p. All the CSS files included inside 'grid' are from cssgrid.net, and I take no credit for them.
