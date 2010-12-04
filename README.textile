@@ -37,15 +37,14 @@ p. All done. Now we need to look at how your HTML needs to look.
 
 h3. Sorting out teh HTMLz
 
-p. So usually when using cssgrid.net you would add classes such as 'onecol' or 'last'. jsFrame takes care of that, all you need to do is tell it is how wide each column is. So to set up a row with three columns of width 3,5 and 4 respectively, your code should look like this:
+p. So usually when using cssgrid.net you would add classes such as 'onecol' or 'last'. jsFrame takes care of that, all you need to do is tell it is how wide each column is. So to set up a row with three columns of width 3,5 and 4 respectively, your code should look like this (I've omitted the closing of divs just to save space):
 notextile. <pre><code>
    <div class="container">
       <div class="row" rel="3.5.4">
          <div>this div will be 3 cols wide</div>
          <div>this one will be 5</div>
          <div>and this will be 4</div>
-      &lt;/div>
-   &lt;/div>
+   <!--closing of divs would be here-->
 notextile. </code></pre>
 
 p. When jsFrame finds a div with a class of "row" it searches and finds the value of that div's rel tag. Each number should be the width of the div that you want it to be, in order and seperated by a period ('.'). jsFrame will also automatically add a class of "last" to the last div. That code is then changed on run time to this:
