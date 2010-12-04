@@ -44,8 +44,8 @@ notextile. <pre><code>
          <div>this div will be 3 cols wide</div>
          <div>this one will be 5</div>
          <div>and this will be 4</div>
-      </div>
-   </div>
+      &lt;/div>
+   &lt;/div>
 notextile. </code></pre>
 
 p. When jsFrame finds a div with a class of "row" it searches and finds the value of that div's rel tag. Each number should be the width of the div that you want it to be, in order and seperated by a period ('.'). jsFrame will also automatically add a class of "last" to the last div. That code is then changed on run time to this:
