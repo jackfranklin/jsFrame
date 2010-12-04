@@ -1,0 +1,67 @@
+h1. Welcome to the homepage of JSFrame, a jQuery Plugin for making CSS grids even easier.
+
+p. The idea of jsFrame came from me using "cssgrid.net":http://cssgrid.net by Andy Taylor more and more, especially for quick prototyping. The only thing that irritates me with using such grids (not cssgrid.net specifically, but generally) is the extra classes, and the fact that I had to add them. So I decided to come up with a jQuery Plugin which did that for me. And that is where jsFrame came from.
+
+h3. A few notes before we continue:
+
+*jsFrame *currently* only supports cssgrid.net. However in the future I will be adding options such that the user could use any css grid / framework (they all follow certain patterns).
+
+*I made this for my own use and it works well. I don't intend to spend hours of support on this, so please make sure you've read through all this before asking me!
+
+h3. Common troubleshooting issues.
+
+*Have you included the jQuery source?
+*Are the links to the CSS files correct?
+*Have you included jsFrame.js?
+
+h3. Usage.
+
+p. jsFrame is very simple. Firstly, make sure the CSS files are all linked to correctly. Then include jQuery and jsFrame.js like so:
+
+notextile. <pre><code>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="jsframe.js" type="text/javascript" charset="utf-8"></script>
+notextile. </code></pre>
+
+p. Now you're all set in terms of files included. Create a new script tag and add this line to execute the plugin:
+
+notextile. <pre><code>
+   $(function() {
+      $('body').jsFrame();
+   });
+notextile. </code></pre>
+
+p. All done. Now we need to look at how your HTML needs to look.
+
+h3. Sorting out teh HTMLz
+
+p. So usually when using cssgrid.net you would add classes such as 'onecol' or 'last'. jsFrame takes care of that, all you need to do is tell it is how wide each column is. So to set up a row with three columns of width 3,5 and 4 respectively, your code should look like this:
+notextile. <pre><code>
+   <div class="container">
+      <div class="row" rel="3.5.4">
+         <div>this div will be 3 cols wide</div>
+         <div>this one will be 5</div>
+         <div>and this will be 4</div>
+      </div>
+   </div>
+notextile. </code></pre>
+
+p. When jsFrame finds a div with a class of "row" it searches and finds the value of that div's rel tag. Each number should be the width of the div that you want it to be, in order and seperated by a period ('.'). jsFrame will also automatically add a class of "last" to the last div. That code is then changed on run time to this:
+notextile. <pre><code>
+<!--top two divs omitted-->
+   <div class="threecol">...</div>
+   <div class="fivecol">...</div>
+   <div class="fourcol last"...</div>
+notextile. </code></pre>
+
+p. Now I don't know about you, but I find that much easier than manually adding all classes.
+
+h3. A word of warning.
+
+p. Just remember, if your user does not have JS installed, they wont get any of this. Personally I only use this for mock-ups or sites when I am 100% I can not worry about people without JS. How you decide to use this is up to you.
+
+h3. Help Me!
+
+p. If you're stuck, get in touch:
+*@Jack_Franklin on Twitter
+*www.jackfranklin.co.uk
